@@ -46,12 +46,15 @@ function msd5leaders_prev(filenames, nangles, leaders, type)
             i = i + 1;
         end
     end
+    for i=0:nangles
+        edges(i+1) = i * 2 * pi() / nangles;
+    end
     figure
-    polarhistogram(angles_leaders, nangles)
+    polarhistogram(angles_leaders, edges)
     title(strcat('Polar histogram vs prev leaders (', type, ')'))
     hold off
     figure
-    polarhistogram(angles, nangles)
+    polarhistogram(angles, edges)
     title(strcat('Polar histogram vs prev followers (', type, ')'))
     hold off
 end

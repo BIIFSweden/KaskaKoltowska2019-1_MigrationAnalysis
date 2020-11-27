@@ -41,7 +41,10 @@ function msd4(filenames, nangles)
     end
     min(angles)
     max(angles)
-    polarhistogram(angles, nangles)
+    for i=0:nangles
+        edges(i+1) = i * 2 * pi() / nangles;
+    end
+    polarhistogram(angles, edges)
 end
     
     
