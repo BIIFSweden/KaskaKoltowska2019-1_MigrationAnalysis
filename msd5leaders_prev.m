@@ -33,7 +33,7 @@ function msd5leaders_prev(filenames, nangles, leaders, type)
                 if a < 0
                     a = a + 2 * pi;
                 end
-                if i == leaders{j}
+                if track == leaders{j}
                     n_leaders = n_leaders + 1
                     angles_leaders(n_leaders) = a;
                 else
