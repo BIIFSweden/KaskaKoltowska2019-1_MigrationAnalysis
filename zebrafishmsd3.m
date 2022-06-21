@@ -1,29 +1,25 @@
-filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Mutants - double hom\1_nuclei.csv';
+filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafba mutants\9_nucleitracks.csv';
 figure
 hold on
 msd3(filename);
-filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Mutants - double hom\2_nuclei.csv';
+filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafba mutants\10_nucleitracks.csv';
 msd3(filename);
-filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Mutants - double hom\3_nuclei.csv';
+filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafba mutants\11_nucleitracks.csv';
 msd3(filename);
-filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Mutants - double hom\4_nuclei.csv';
-msd3(filename);
-title('Relative displacement (mutants)')
+title('Relative displacement (mafba)')
 xlabel('dx')
 ylabel('dy')
 hold off
 
-filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Sibbling controls\5_nuclei.csv';
+filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafbb mutants\12_nucleitracks.csv';
 figure
 hold on
 msd3(filename);
-filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Sibbling controls\6_nuclei.csv';
+filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafbb mutants\13_nucleitracks.csv';
 msd3(filename);
-filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Sibbling controls\7_nuclei.csv';
+filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafbb mutants\14_nucleitracks.csv';
 msd3(filename);
-filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Sibbling controls\8_nuclei.csv';
-msd3(filename);
-title('Relative displacement (controls)')
+title('Relative displacement (mafbb)')
 xlabel('dx')
 ylabel('dy')
 hold off

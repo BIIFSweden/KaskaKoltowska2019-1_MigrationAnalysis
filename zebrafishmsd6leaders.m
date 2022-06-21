@@ -1,58 +1,48 @@
 do_leaders = true;
-filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Mutants - double hom\1_nuclei.csv';
-tipfile = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Mutants - double hom\1_tip.csv';
-leader = 5;
+filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafba mutants\9_nucleitracks.csv';
+tipfile = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafba mutants\9_tip.csv';
+leader = 1;
 res = msd6leaders(filename, tipfile, leader, do_leaders);
 figure
 plot(res);
 hold on
-filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Mutants - double hom\2_nuclei.csv';
-tipfile = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Mutants - double hom\2_tip.csv';
-leader = 5;
+filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafba mutants\10_nucleitracks.csv';
+tipfile = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafba mutants\10_tip.csv';
+leader = 1;
 res = msd6leaders(filename, tipfile, leader, do_leaders);
 plot(res);
-filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Mutants - double hom\3_nuclei.csv';
-tipfile = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Mutants - double hom\3_tip.csv';
-leader = 6;
+filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafba mutants\11_nucleitracks.csv';
+tipfile = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafba mutants\11_tip.csv';
+leader = 1;
 res = msd6leaders(filename, tipfile, leader, do_leaders);
 plot(res);
-filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Mutants - double hom\4_nuclei.csv';
-tipfile = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Mutants - double hom\4_tip.csv';
+title('Mean Square Displacement (msd) leaders mafba')
+xlabel('Slice')
+ylabel('msd')
+legend('mafba9', 'mafba10', 'mafba11')
+hold off
+
+filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafbb mutants\12_nucleitracks.csv';
+tipfile = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafbb mutants\12_tip.csv';
+leader = 1;
+res = msd6leaders(filename, tipfile, leader, do_leaders);
+figure
+plot(res);
+hold on
+filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafbb mutants\13_nucleitracks.csv';
+tipfile = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafbb mutants\13_tip.csv';
 leader = 3;
 res = msd6leaders(filename, tipfile, leader, do_leaders);
 plot(res);
-title('Mean Square Displacement (msd) leaders mutants')
+filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafbb mutants\14_nucleitracks.csv';
+tipfile = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\mafbb mutants\14_tip.csv';
+leader = 1;
+res = msd6leaders(filename, tipfile, leader, do_leaders);
+plot(res);
+title('Mean Square Displacement (msd) leaders mafbb')
 xlabel('Slice')
 ylabel('msd')
-legend('mut1', 'mut2', 'mut3', 'mut4')
-hold off
-
-filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Sibbling controls\5_nuclei.csv';
-tipfile = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Sibbling controls\5_tip.csv';
-leader = 2;
-res = msd6leaders(filename, tipfile, leader, do_leaders);
-figure
-plot(res);
-hold on
-filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Sibbling controls\6_nuclei.csv';
-tipfile = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Sibbling controls\6_tip.csv';
-leader = 2;
-res = msd6leaders(filename, tipfile, leader, do_leaders);
-plot(res);
-filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Sibbling controls\7_nuclei.csv';
-tipfile = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Sibbling controls\7_tip.csv';
-leader = 2;
-res = msd6leaders(filename, tipfile, leader, do_leaders);
-plot(res);
-filename = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Sibbling controls\8_nuclei.csv';
-tipfile = 'C:\Data\Projects\KaskaKoltowska2019-1\Data\Sibbling controls\8_tip.csv';
-leader = 5;
-res = msd6leaders(filename, tipfile, leader, do_leaders);
-plot(res);
-title('Mean Square Displacement (msd) leaders controls')
-xlabel('Slice')
-ylabel('msd')
-legend('cont5', 'cont6', 'cont7', 'cont8')
+legend('mafbb12', 'mafbb13', 'mafbb14')
 hold off
     
     
